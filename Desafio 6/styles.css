@@ -2,27 +2,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 16px; /* Establecer tamaño de fuente base */
-    line-height: 1.5; /* Asegurar una buena legibilidad */
+    font-size: 16px; 
+    line-height: 1.5; 
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px; /* Ajustar el padding para header */
+    padding: 10px 20px; 
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem; /* Ajustar el tamaño de fuente para header */
+    font-size: 1.5rem; 
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Utilizar flexbox para una mejor disposición */
-    gap: 15px; /* Añadir espacio entre elementos de navegación */
+    display: flex; 
+    gap: 15px; 
 }
 
 nav ul li {
@@ -32,21 +32,21 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem; /* Ajustar tamaño de fuente para enlaces de navegación */
+    font-size: 1rem; 
 }
 
 .container {
     display: flex;
-    flex-direction: column; /* Ajustar el contenedor para disposición vertical */
+    flex-direction: column; 
     padding: 20px;
-    max-width: 1200px; /* Limitar el ancho máximo del contenedor */
-    margin: 0 auto; /* Centrar el contenedor */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .product-category {
     display: none;
-    flex-wrap: wrap; /* Permitir que los productos se envuelvan en múltiples líneas */
-    gap: 20px; /* Añadir espacio entre los productos */
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 .product-category.active {
@@ -58,39 +58,39 @@ nav ul li a {
     border-radius: 5px;
     padding: 15px;
     text-align: center;
-    flex: 1 1 calc(33.333% - 40px); /* Ocupa un tercio del contenedor con espacio para márgenes */
+    flex: 1 1 calc(33.333% - 40px); 
     box-sizing: border-box;
-    max-width: 300px; /* Limitar el ancho máximo del producto */
+    max-width: 300px; 
 }
 
 .product img {
     width: 100%;
     border-radius: 5px;
-    height: auto; /* Asegurar que la imagen mantenga proporción */
+    height: auto; 
 }
 
 .product h2 {
     margin-top: 10px;
-    font-size: 1.25rem; /* Ajustar tamaño de fuente para títulos de productos */
+    font-size: 1.25rem; 
 }
 
 .product p {
-    font-size: 0.9rem; /* Ajustar tamaño de fuente para descripciones */
+    font-size: 0.9rem; 
 }
 
 .product .price {
     font-weight: bold;
-    font-size: 1rem; /* Ajustar tamaño de fuente para precios */
+    font-size: 1rem; 
 }
 
 .product button {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 15px; /* Ajustar el padding para botones */
+    padding: 10px 15px; 
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem; /* Ajustar tamaño de fuente para botones */
+    font-size: 1rem; 
     margin-top: 10px;
 }
 
@@ -98,6 +98,6 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 20px; /* Ajustar el padding para footer */
-    font-size: 0.9rem; /* Ajustar tamaño de fuente para footer */
+    padding: 10px 20px; 
+    font-size: 0.9rem; 
 }
