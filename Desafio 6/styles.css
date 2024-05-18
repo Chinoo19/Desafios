@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Establecer tamaño de fuente base */
+    line-height: 1.5; /* Asegurar una buena legibilidad */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px; /* Ajustar el padding para header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem; /* Ajustar el tamaño de fuente para header */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utilizar flexbox para una mejor disposición */
+    gap: 15px; /* Añadir espacio entre elementos de navegación */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Ajustar tamaño de fuente para enlaces de navegación */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Ajustar el contenedor para disposición vertical */
+    padding: 20px;
+    max-width: 1200px; /* Limitar el ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.product-category {
+    display: none;
+    flex-wrap: wrap; /* Permitir que los productos se envuelvan en múltiples líneas */
+    gap: 20px; /* Añadir espacio entre los productos */
+}
+
+.product-category.active {
+    display: flex;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px); /* Ocupa un tercio del contenedor con espacio para márgenes */
+    box-sizing: border-box;
+    max-width: 300px; /* Limitar el ancho máximo del producto */
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto; /* Asegurar que la imagen mantenga proporción */
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 1.25rem; /* Ajustar tamaño de fuente para títulos de productos */
+}
+
+.product p {
+    font-size: 0.9rem; /* Ajustar tamaño de fuente para descripciones */
+}
+
+.product .price {
+    font-weight: bold;
+    font-size: 1rem; /* Ajustar tamaño de fuente para precios */
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px; /* Ajustar el padding para botones */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* Ajustar tamaño de fuente para botones */
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px; /* Ajustar el padding para footer */
+    font-size: 0.9rem; /* Ajustar tamaño de fuente para footer */
+}

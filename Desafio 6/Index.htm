@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Mundo Nuevo</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mundo Nuevo</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarCategoria('tecnologia')">Tecnología</a></li>
+                <li><a href="#" onclick="mostrarCategoria('electrodomesticos')">Electrodomésticos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Sección de Tecnología -->
+        <section id="tecnologia" class="product-category active">
+            <h2>Tecnología</h2>
+            <div class="product">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS7aIoN-FWz85kKrVvAlvESG0_5LVBa2FarK_oSlJrqXtWPIZRmp7WTG_EpFc5NIoor1RcOAuGEG3n1Ok6qr8311-5emwY9khP5GvXGLaO1&usqp=CAE" alt="iPhone 13 Pro">
+                <p>El iPhone 13 Pro cuenta con una pantalla Super Retina XDR de 6.1 pulgadas, el chip A15 Bionic, 5G, una cámara Pro avanzada y mucho más. Es el dispositivo perfecto para capturar momentos increíbles y disfrutar de un rendimiento excepcional.</p>
+                <p class="price">Precio unitario: $536.92</p>
+                <button onclick="agregarAlCarrito('iPhone 13 Pro')">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTVp5ZvaRcbJApiOEC3faDASZ-S5A552AEy7tb-JHseVvqNqHoiNQeUr89ZqsDlBmqthFw8YVrNSZzwKZIjSdLXAiTyrs8vTVY0c5M5miIbK1WFkaeSikl9&usqp=CAE" alt="iPad Pro">
+                <p>El iPad Pro cuenta con una pantalla Liquid Retina XDR de 11 pulgadas, el chip M1, 5G, una cámara Pro avanzada y mucho más. Es el dispositivo perfecto para trabajar, crear y disfrutar del entretenimiento.</p>
+                <p class="price">Precio unitario: $999.00</p>
+                <button onclick="agregarAlCarrito('iPad Pro')">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSiRblfqIi9jCoDpmPXmCmFCYJjQGCq1BD1wK1qACiumTqHXrTio1-9uTkv9M8BRbd18TEyiq8TV47tJ9VJLNCWBRV_C2re_eBQhLJY3wCSgAyKb4Fnw2gRXg&usqp=CAE" alt="Apple Watch Series 7">
+                <p>El Apple Watch Series 7 cuenta con una pantalla Retina siempre activa, nuevos colores, un diseño más resistente y carga más rápida. Es el compañero perfecto para llevar un estilo de vida activo y saludable.</p>
+                <p class="price">Precio unitario: $399.00</p>
+                <button onclick="agregarAlCarrito('Apple Watch Series 7')">Agregar al carrito</button>
+            </div>
+            
+        </section>
+
+        <!-- Sección de Electrodomésticos -->
+        <section id="electrodomesticos" class="product-category">
+            <h2>Electrodomésticos</h2>
+            <div class="product">
+                <img src="https://imgs.search.brave.com/pRbfpN_tE56UBupjYYtlUvU0D4WGVE268DFEsXkY8KQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cm9kby5jb20uYXIv/bWVkaWEvY2F0YWxv/Zy9wcm9kdWN0L2Nh/Y2hlLzg1NTA5MGE1/YzY3ZTQ1YjI2Yzll/MGQzNDVlNzU5MmRj/L2wvYS9sYXZhcnJv/cGFzLWRyZWFuLW5l/eHQ2LjA4LmVjby0x/LmpwZw" alt="Lavarropas">
+                <p>El lavarropas ofrece una gran capacidad de carga, múltiples programas de lavado y una eficiencia energética superior. Ideal para mantener tu ropa limpia y fresca.</p>
+                <p class="price">Precio unitario: $1.463.999,00</p>
+                <button onclick="agregarAlCarrito('Lavarropas')">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://imgs.search.brave.com/f3uJQaMetXaLX6dtnI4mqZ1drqMv4NSFeuPT6dUBItg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuaGVuZGVsLmNv/bS9tZWRpYS9jYXRh/bG9nL3Byb2R1Y3Qv/Y2FjaGUvYWIyNGQw/MjljYzlmOTY2YzI3/ODYxODJlZTc5YzM1/Y2IvNC8wLzQwOTQw/LmpwZw" alt="Pava eléctrica">
+                <p>La pava eléctrica calienta agua rápidamente y cuenta con un diseño elegante y compacto. Es perfecta para preparar tus bebidas calientes favoritas en minutos.</p>
+                <p class="price">Precio unitario: $189.999,00</p>
+                <button onclick="agregarAlCarrito('Pava eléctrica')">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://imgs.search.brave.com/Pm7HRW_HK1u2rpSqXeuajIHvoZAAwRhQhVRhSmLz9ck/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF84/MDk2ODQtTUxBNzQ3/ODIzODcyMjlfMDIy/MDI0LUYud2VicA" alt="Horno eléctrico">
+                <p>El horno eléctrico ofrece una cocción rápida y uniforme, con múltiples funciones y un diseño moderno. Ideal para preparar una variedad de comidas deliciosas.</p>
+                <p class="price">Precio unitario: $599.999,00</p>
+                <button onclick="agregarAlCarrito('Horno eléctrico')">Agregar al carrito</button>
+            </div>
+            
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mundo Nuevo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
