@@ -1,4 +1,4 @@
-// Array de productos de tecnología
+
 const productosTecnologia = [
     { nombre: "iPhone 13 Pro", precio: 536.92, categoria: "tecnologia" },
     { nombre: "iPad Pro", precio: 999.00, categoria: "tecnologia" },
@@ -6,7 +6,7 @@ const productosTecnologia = [
     { nombre: "MacBook Pro", precio: 1299.00, categoria: "tecnologia" }
 ];
 
-// Array de productos de electrodomésticos
+
 const productosElectrodomesticos = [
     { nombre: "Lavarropas", precio: 400.00, categoria: "electrodomesticos" },
     { nombre: "Pava eléctrica", precio: 30.00, categoria: "electrodomesticos" },
@@ -15,7 +15,7 @@ const productosElectrodomesticos = [
     { nombre: "Aire acondicionado", precio: 300.00, categoria: "electrodomesticos" }
 ];
 
-// Función para agregar productos al carrito
+
 function agregarAlCarrito(producto) {
     const edad = parseInt(prompt("Por favor, introduce tu edad:"));
 
@@ -44,14 +44,14 @@ function agregarAlCarrito(producto) {
     });
 }
 
-// Función para obtener el precio unitario del producto
+
 function obtenerPrecioUnitario(producto) {
     const productos = [...productosTecnologia, ...productosElectrodomesticos];
     const productoEncontrado = productos.find(p => p.nombre === producto);
     return productoEncontrado ? productoEncontrado.precio : 0;
 }
 
-// Función para mostrar la categoría seleccionada
+
 function mostrarCategoria(categoria) {
     const secciones = document.querySelectorAll('.product-category');
     secciones.forEach(seccion => {
@@ -63,5 +63,5 @@ function mostrarCategoria(categoria) {
     });
 }
 
-// Mostrar la categoría de tecnología por defecto
+
 mostrarCategoria('tecnologia');
