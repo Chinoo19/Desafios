@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Arrays de productos
+    
     const productosTecnologiaActualizados = [
       { nombre: "iPhone 14 Pro", precio: 149999, categoria: "tecnologia", imagen: "https://example.com/iphone14pro.jpg" },
       { nombre: "Samsung Galaxy S23 Ultra", precio: 129999, categoria: "tecnologia", imagen: "https://example.com/galaxys23ultra.jpg" },
@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
       { nombre: "Plancha a Vapor", precio: 7999, categoria: "electrodomesticos", imagen: "https://example.com/plancha.jpg" }
     ];
   
-    // Función para agregar productos al DOM
     function agregarProductos(productos, categoriaId) {
       const categoria = document.getElementById(categoriaId);
       categoria.innerHTML = ''; // Limpiar productos anteriores
@@ -40,31 +39,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    // Agregar productos a sus respectivas secciones
     agregarProductos(productosTecnologiaActualizados, 'tecnologia');
     agregarProductos(productosElectrodomesticosActualizados, 'electrodomesticos');
   
-    // Función para agregar al carrito
     window.agregarAlCarrito = function(productoNombre, imagen, precio) {
       alert(`${productoNombre} ha sido agregado al carrito.`);
-      // Crear un nuevo elemento de imagen
+
       const imgElement = document.createElement('img');
       imgElement.src = imagen;
       imgElement.alt = productoNombre;
-      // Obtener el botón "Agregar al carrito" al que se le hizo clic
+     
       const btnCarrito = event.target;
       // Limpiar el contenido del botón
       btnCarrito.innerHTML = '';
       // Agregar la imagen al botón
       btnCarrito.appendChild(imgElement);
-      // Crear un nuevo elemento <h3> con el precio del producto
+
       const precioElement = document.createElement('h3');
       precioElement.textContent = `Precio: $${precio.toLocaleString()}`;
-      // Agregar el precio al botón
+
       btnCarrito.appendChild(precioElement);
     };
   
-    // Código para cambiar entre categorías
+   
     const categoryLinks = document.querySelectorAll('.category-link');
     categoryLinks.forEach(link => {
       link.addEventListener('click', event => {
@@ -77,25 +74,23 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    // Manipulando el DOM
   
-    // Crear un botón con createElement
+ 
     const btnCarrito = document.createElement('button');
-    // Sumarle al botón creado el ID ‘btnCarrito’.
+    
     btnCarrito.id = 'btnCarrito';
-    // Sumar con .innerHTML el texto que tendrá el botón en su interior.
+   
     btnCarrito.innerHTML = 'Agregar al carrito';
   
-    // Escuchar con addEventListener el evento “click” sobre el botón generado
     btnCarrito.addEventListener('click', () => {
-      // Asegurando que la función que vas a crear dispare una salida en un elemento HTML cuando se presione.
+    
       const mensajeAgregado = document.createElement('h3');
       mensajeAgregado.innerText = 'Agregado';
-      // Una vez hecho esto; solo queda agregar el botón generado con .appendChild
+    
       btnCarrito.appendChild(mensajeAgregado);
     });
   
-    // Agregar el botón generado al final del documento
+
     document.body.appendChild(btnCarrito);
   
   });
