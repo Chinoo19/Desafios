@@ -1,12 +1,12 @@
-/* Colores primarios */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #003366; /* Fondo azul oscuro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #003366; 
+    color: #ffffff; 
   }
   
   header {
@@ -18,7 +18,7 @@ body {
   header h1 {
     margin: 0;
     font-size: 1.5rem;
-    color: #ff6600; /* Naranja intenso */
+    color: #ff6600; 
   }
   
   nav ul {
